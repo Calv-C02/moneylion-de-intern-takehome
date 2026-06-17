@@ -92,4 +92,4 @@ create table if not exists RAW.TRANSACTION_RAW (
 
 ## AI Usage Note
 
-AI helped me compare two extraction patterns (CDC-first versus pure high-watermark) and suggest common Snowflake layer designs. I rejected suggestions that introduced extra infrastructure not required by the prompt (for example, near-real-time streaming and complex event frameworks). My final design keeps daily batch reliability as the priority, adds a clear publish gate, and stays scoped to the given schema and intern-level implementation expectations.
+AI helped me compare two extraction patterns (CDC-first versus pure high-watermark) and suggest common Snowflake layer designs. I rejected suggestions that introduced extra infrastructure not required by the prompt (for example, near-real-time streaming and complex event frameworks). My final design keeps daily batch reliability as the priority, adds a clear publish gate, and stays scoped to the given schema implementation expectations.
